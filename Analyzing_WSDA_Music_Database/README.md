@@ -38,6 +38,118 @@ The WSDA Music Database contains the following tables, which provide a relationa
 - **PlaylistTrack**: Relationship between playlists and tracks.
 - **Track**: Music tracks with details like album, media type, genre, and composer.
 
+## All The Tables in the Database
+The WSDA Music Database consists of the following tables and their fields:
+
+### Album
+| Field     | Data Type  |
+|-----------|------------|
+| AlbumId   | INTEGER    |
+| Title     | NVARCHAR   |
+| ArtistId  | INTEGER    |
+
+### Artist
+| Field     | Data Type  |
+|-----------|------------|
+| ArtistId  | INTEGER    |
+| Name      | NVARCHAR   |
+
+### Customer
+| Field          | Data Type  |
+|----------------|------------|
+| CustomerId     | INTEGER    |
+| FirstName      | NVARCHAR   |
+| LastName       | NVARCHAR   |
+| Company        | NVARCHAR   |
+| Address        | NVARCHAR   |
+| City           | NVARCHAR   |
+| State          | NVARCHAR   |
+| Country        | NVARCHAR   |
+| PostalCode     | NVARCHAR   |
+| Phone          | NVARCHAR   |
+| Fax            | NVARCHAR   |
+| Email          | NVARCHAR   |
+| SupportRepId   | INTEGER    |
+
+### Employee
+| Field        | Data Type  |
+|--------------|------------|
+| EmployeeId   | INTEGER    |
+| LastName     | NVARCHAR   |
+| FirstName    | NVARCHAR   |
+| Title        | NVARCHAR   |
+| ReportsTo    | INTEGER    |
+| BirthDate    | DATETIME   |
+| HireDate     | DATETIME   |
+| Address      | NVARCHAR   |
+| City         | NVARCHAR   |
+| State        | NVARCHAR   |
+| Country      | NVARCHAR   |
+| PostalCode   | NVARCHAR   |
+| Fax          | NVARCHAR   |
+| Email        | NVARCHAR   |
+
+
+### Genre
+| Field     | Data Type  |
+|-----------|------------|
+| GenreId   | INTEGER    |
+| Name      | NVARCHAR   |
+
+### Invoice
+| Field            | Data Type  |
+|------------------|------------|
+| InvoiceId        | INTEGER    |
+| CustomerId       | INTEGER    |
+| InvoiceDate      | DATETIME   |
+| BillingAddress   | NVARCHAR   |
+| BillingCity      | NVARCHAR   |
+| BillingState     | NVARCHAR   |
+| BillingCountry   | NVARCHAR   |
+| BillingPostalCode| NVARCHAR   |
+| Total            | NUMERIC    |
+
+### InvoiceLine
+| Field         | Data Type  |
+|---------------|------------|
+| InvoiceLineId | INTEGER    |
+| InvoiceId     | INTEGER    |
+| TrackId       | INTEGER    |
+| UnitPrice     | NUMERIC    |
+| Quantity      | INTEGER    |
+
+### MediaType
+| Field        | Data Type  |
+|--------------|------------|
+| MediaTypeId  | INTEGER    |
+| Name         | NVARCHAR   |
+
+
+### Playlist
+| Field        | Data Type  |
+|--------------|------------|
+| PlaylistId   | INTEGER    |
+| Name         | NVARCHAR   |
+
+### PlaylistTrack
+| Field        | Data Type  |
+|--------------|------------|
+| PlaylistId   | INTEGER    |
+| TrackId      | INTEGER    |
+
+### Track
+| Field        | Data Type  |
+|--------------|------------|
+| TrackId      | INTEGER    |
+| Name         | NVARCHAR   |
+| AlbumId      | INTEGER    |
+| MediaTypeId  | INTEGER    |
+| GenreId      | INTEGER    |
+| Composer     | NVARCHAR   |
+| Milliseconds | INTEGER    |
+| Bytes        | INTEGER    |
+| UnitPrice    | NUMERIC    |
+
 ## Reflections
 This course has truly enhanced my understanding of SQL and data manipulation. I highly recommend it for anyone looking to start their journey into database management and data analysis.
 
