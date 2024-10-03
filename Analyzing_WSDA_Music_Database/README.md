@@ -23,6 +23,21 @@ Throughout the course, I explored essential SQL topics, including:
 - **DBMS**: DB Browser for SQLite
 - **Database**: WSDA Music Database
 
+## Database Structure
+The WSDA Music Database contains the following tables, which provide a relational schema for managing music data:
+
+- **Album**: Album information including ID, title, and associated artist.
+- **Artist**: Artist details with ID and name.
+- **Customer**: Customer information, including contact and support details.
+- **Employee**: Employee records covering personal and organizational details.
+- **Genre**: Genres of music identified by name and ID.
+- **Invoice**: Invoices generated for customers, linked to billing information and totals.
+- **InvoiceLine**: Details of each item in an invoice, such as track and quantity.
+- **MediaType**: Types of media formats stored by name and ID.
+- **Playlist**: Playlists with associated tracks for organizing music.
+- **PlaylistTrack**: Relationship between playlists and tracks.
+- **Track**: Music tracks with details like album, media type, genre, and composer.
+
 ## Reflections
 This course has truly enhanced my understanding of SQL and data manipulation. I highly recommend it for anyone looking to start their journey into database management and data analysis.
 
