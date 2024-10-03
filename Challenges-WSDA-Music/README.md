@@ -1,4 +1,5 @@
-# Project Missing Money Matters
+# WSDA Music Database Challenges
+### Project Missing Money Matters
 
 ## CHALLENGE 1
 General queries that begin to give you some high-level context.
